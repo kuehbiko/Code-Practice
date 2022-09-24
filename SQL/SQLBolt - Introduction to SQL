@@ -99,6 +99,7 @@ JOIN boxoffice
 ON id = movie_id
 GROUP BY director
 
+22 Sep 2022
 SQL Lesson 13: Inserting rows
 Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
 INSERT INTO movies
@@ -108,6 +109,7 @@ Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and m
 INSERT INTO boxoffice
 VALUES (4, 8.7, 340*1000000, 270*1000000);
 
+24 Sep 2022
 SQL Lesson 14: Updating rows
 The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
 UPDATE movies
@@ -122,6 +124,7 @@ UPDATE movies
 SET title = "Toy Story 3", director = "Lee Unkrich"
 WHERE title = "Toy Story 8"
 
+24 Sep 2022
 SQL Lesson 15: Deleting rows
 This database is getting too big, lets remove all movies that were released before 2005.
 DELETE FROM movies
@@ -130,6 +133,7 @@ Andrew Stanton has also left the studio, so please remove all movies directed by
 DELETE FROM movies
 WHERE director = "Andrew Stanton";
 
+24 Sep 2022
 SQL Lesson 16: Creating tables
 Create a new table named Database with the following columns:
 – Name A string (text) describing the name of the database
@@ -141,3 +145,21 @@ name TEXT,
 version FLOAT,
 download_count INTEGER
 );
+
+24 Sep 2022
+SQL Lesson 17: Altering tables
+Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in.
+ALTER TABLE movies
+ADD aspect_ratio FLOAT
+Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English.
+ALTER TABLE movies
+ADD language TEXT 
+DEFAULT 'English';
+
+24 Sep 2022
+SQL Lesson 18: Dropping tables
+We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+DROP TABLE IF EXISTS movies;
+And drop the BoxOffice table as well
+DROP TABLE IF EXISTS boxoffice;
+
