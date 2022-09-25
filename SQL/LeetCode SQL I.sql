@@ -1,7 +1,8 @@
 -- LeetCode SQL I 
 -- (Using MySQL)
 
--- DAY 1 - 24 Sep 2022
+
+-- == DAY 1 - 24 Sep 2022 ==
 
 -- 595. Big Countries
 -- A country is big if:
@@ -39,7 +40,8 @@ WHERE orders.customerid IS NULL;
 
 -- Personal Note: Column name and table name can be the same
 
--- DAY 2 - 25 Sep 2022
+
+-- == DAY 2 - 25 Sep 2022 ==
 
 -- 1873. Calculate Special Bonus
 -- Write an SQL query to calculate the bonus of each employee. 
