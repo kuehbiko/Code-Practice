@@ -1,0 +1,3 @@
+-- SQL Lesson 8: A short note on NULLs
+-- Find the name and role of all employees who have not been assigned to a building
+-- Find the names of the buildings that hold no employees
