@@ -12,7 +12,6 @@ ORDER BY employee_id
 
 
 -- 27. Swap Salary
-
 -- Write an SQL query to swap all 'f' and 'm' values (i.e., change all 'f' values to 'm' and vice versa). 
 -- Use a single update statement and no intermediate temporary tables.
 
@@ -21,7 +20,6 @@ SET sex = IF(sex = 'f', 'm', 'f');
 
 
 -- 196. Delete Duplicate Emails
-
 -- Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id. 
 -- Note that you are supposed to write a DELETE statement and not a SELECT one
 
