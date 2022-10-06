@@ -1,4 +1,0 @@
--- SQL Lesson 9: Queries with expressions
--- List all movies and their combined sales in millions of dollars
--- List all movies and their ratings in percent
--- List all movies that were released on even number years
