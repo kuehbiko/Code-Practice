@@ -6,3 +6,6 @@
 SELECT p.firstname, p.lastname, a.city, a.state FROM person p
 LEFT JOIN address a
 ON p.personid = a.personid;
+
+-- 1581. Customer Who Visited but Did Not Make Any Transactions\
+-- 1148. Article Views I
