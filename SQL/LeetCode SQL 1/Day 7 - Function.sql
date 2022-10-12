@@ -9,6 +9,7 @@ WHERE (activity_date BETWEEN DATE_ADD('2019-07-27', INTERVAL -29 DAY) AND '2019-
 AND session_id IS NOT NULL
 GROUP BY activity_date;
 
+
 -- 1693. Daily Leads and Partners
 -- Write an SQL query that will, for each date_id and make_name, return the number of distinct lead_id's and distinct partner_id's.
 -- Return the result table in any order.
@@ -18,6 +19,7 @@ COUNT(DISTINCT lead_id) AS unique_leads,
 COUNT(DISTINCT partner_id) AS unique_partners
 FROM dailysales
 GROUP BY date_id, make_name;
+
 
 -- 1729. Find Followers Count
 -- Write an SQL query that will, for each user, return the number of followers.
